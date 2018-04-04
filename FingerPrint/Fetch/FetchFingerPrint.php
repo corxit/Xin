@@ -2,8 +2,6 @@
 
 
 <script src="fingerprint2.js"></script>
-
-
 <script>
 
 var fp = new Fingerprint2();
@@ -11,9 +9,11 @@ var fp = new Fingerprint2();
 fp.get(function(result, components) {
   console.log(result) // a hash, representing your device fingerprint
   console.log(components) // an array of FP components
-  
+
+    //获取到指纹
   	var resultString = "<strong>指纹</strong>: "+result;
-  
+
+    //参数详情
 	var details = "<strong>参数</strong><br />";
 	for (var index in components) {
 		var obj = components[index];
@@ -25,7 +25,6 @@ fp.get(function(result, components) {
 
   
 	document.getElementById("Info").innerHTML = resultString+"<br><br>"+details;
-
   
 });
 	
