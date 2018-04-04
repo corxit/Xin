@@ -1,1 +1,1 @@
-访问 fange.org/Xin/FingerPrint/获取/FetchFingerPrint.php
+访问 fange.org/Xin/FingerPrint/Fetch/FetchFingerPrint.php 
